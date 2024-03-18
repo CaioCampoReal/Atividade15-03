@@ -1,28 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import RoutesApp from './routes';
-import { useState, useEffect } from 'react'
-import { db, auth } from './firebaseConnection';
+// import { useState, useEffect } from 'react'
+// import { db, auth } from './firebaseConnection';
 
-
-import { 
-  doc, 
-  setDoc, 
-  collection, 
-  addDoc, 
-  getDoc, 
-  getDocs, 
-  updateDoc, 
-  deleteDoc,
-  onSnapshot
-} from 'firebase/firestore'
-
-import { 
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged
-} from 'firebase/auth'
 
 function App() {
   
@@ -105,8 +86,8 @@ function App() {
   //   setUser(false);
   //   setUserDetail({})
   // }
-  <React.StrictMode>
+  return (
     <RoutesApp />
-  </React.StrictMode>
+  )
 }
 export default App;
